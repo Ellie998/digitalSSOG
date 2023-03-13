@@ -95,9 +95,15 @@ li a:hover {
   margin: 0 auto;
 }
 
+.text-align-left {
+  text-align: left;
+}
 
 .background-grey {
   background-color: rgba(242, 242, 242, 0.807);
+}
+.background-white {
+  background-color: white;
 }
 
 .border-radius-round {

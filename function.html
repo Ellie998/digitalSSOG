@@ -7,7 +7,7 @@
           return response.text();
         })
         .then((data) => {
-          // data = data + '<link rel="stylesheet" href="./styles/function.css">';
+          data = data + '<link rel="stylesheet" href="./styles/function.css">';
           document.querySelector("head").innerHTML = data;
         });
 
@@ -29,26 +29,26 @@
         <h1>기능 소개</h1>
         <!-- <h2>어플명 : Message</h2> -->
         <ul id="description-ul">
-          <li>
+          <li class="background-grey border-radius-round hover-box-shadow">
             <h2>기능 특징</h2>
             <p id="description-characteristic">문자를 보낼 수 있다.</p>
           </li>
-          <li>
+          <li class="background-grey border-radius-round hover-box-shadow">
             <h2>기능을 제공하는 어플</h2>
             <ul id="list-ul"></ul>
           </li>
         </ul>
       </section>
-      <section id="use">
-        <div class="wrap">
+      <section id="use" class="layout-center background-grey">
+        <div id="main-main-wrap" class="wrap">
           <h2>사용 기능 정리</h2>
-          <ul>
-            <li>메세지 보내기</li>
-            <li>메세지 삭제하기</li>
-            <li>메세지 전달하기</li>
+          <ul class="text-align-left">
+            <li><a href=""> 메세지 보내기</a></li>
+            <li><a href=""> 메세지 저장하기</a></li>
+            <li><a href=""> 메세지 전달하기</a></li>
           </ul>
 
-          <div id="display-box"></div>
+          <div id="display-box" class="background-white"></div>
           <button class="btn">직접 체험하러 GO!</button>
         </div>
       </section>
