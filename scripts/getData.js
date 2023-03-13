@@ -1,6 +1,5 @@
 const appData = new Array();
-const categoryElements = document.querySelectorAll(".category-wrap h3");
-const checkElement = document.getElementById("check");
+const categoryElements = document.querySelectorAll("#function-categorys h3");
 
 function addList(categoryElement, functionName) {
   const newList = document.createElement("li");

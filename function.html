@@ -7,7 +7,7 @@
           return response.text();
         })
         .then((data) => {
-          data = data + '<link rel="stylesheet" href="./styles/function.css">';
+          // data = data + '<link rel="stylesheet" href="./styles/function.css">';
           document.querySelector("head").innerHTML = data;
         });
 
@@ -24,8 +24,8 @@
   </head>
   <body>
     <header></header>
-    <main>
-      <section id="intro">
+    <main class="">
+      <section id="intro" class="layout-center">
         <h1>기능 소개</h1>
         <!-- <h2>어플명 : Message</h2> -->
         <ul id="description-ul">

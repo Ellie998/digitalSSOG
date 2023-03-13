@@ -62,23 +62,7 @@ main {
   padding: 50px;
 }
 
-section.hero {
-  text-align: center;
-}
-
-section.hero h1 {
-  font-size: 60px;
-  font-weight: 700;
-  color: var(--dark-grey);
-  margin-bottom: 20px;
-}
-
-section.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-section.hero .btn, .btn {
+.btn {
   display: inline-block;
   background-color: var(--dark-grey);
   color: #fff;
@@ -88,43 +72,10 @@ section.hero .btn, .btn {
   transition: background-color 0.3s ease-in-out;
 }
 
-section.hero .btn:hover , .btn:hover {
+.btn:hover {
   background-color: var(--mid-grey);
 }
 
-section.services h2 {
-  font-size: 40px;
-  font-weight: 700;
-  color: var(--dark-grey);
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-section.services ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-section.services li {
-  width: calc(100% / 3 - 30px);
-  padding: 30px;
-  background-color: #f5f5f5;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-section.services h3 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-section.services p {
-  font-size: 18px;
-  line-height: 1.5;
-}
 
 li {
   list-style: none;
