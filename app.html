@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
+  <head>
+    <script>
+      fetch("views/head.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          data = data + '<link rel="stylesheet" href="./styles/app.css">';
+          document.querySelector("head").innerHTML = data;
+        });
+
+      fetch("views/header.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.querySelector("header").innerHTML = data;
+        });
+    </script>
+    <!-- <script src="./scripts/getData.js"></script> -->
+    <script src="./scripts/changeText.js" defer></script>
+  </head>
   <body>
     <header></header>
     <main>
-      <section id="app-intro">
+      <section id="intro">
         <h1>Message 어플 소개</h1>
         <!-- <h2>어플명 : Message</h2> -->
-        <div id="app-people-response-wrap">
-          <p id="app-description-downNum"></p>
-          <p id="app-description-star"></p>
+        <div id="people-response-wrap">
+          <p id="description-downNum"></p>
+          <p id="description-star"></p>
         </div>
-        <ul id="app-description-ul">
+        <ul id="description-ul">
           <li>
             <h2>어플 특징</h2>
-            <p id="app-description-characteristic">문자를 보낼 수 있다.</p>
+            <p id="description-characteristic">문자를 보낼 수 있다.</p>
           </li>
           <li>
             <img
-              id="app-description-img"
+              id="description-img"
               src=""
               alt=""
               style="
@@ -33,7 +54,7 @@
           </li>
         </ul>
       </section>
-      <section id="app-use">
+      <section id="use">
         <div class="wrap">
           <h2>사용 기능 정리</h2>
           <ul>
@@ -46,7 +67,7 @@
           <button class="btn">직접 체험하러 GO!</button>
         </div>
       </section>
-      <section id="app-download" class="">
+      <section id="download" class="">
         <a
           href="https://play.google.com/store/apps/details?id=com.chating.messages.chat.fun&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
           ><img
@@ -73,26 +94,5 @@
     <footer>
       <p>Copyright © upps</p>
     </footer>
-
-    <script>
-      fetch("views/head.html")
-        .then((response) => {
-          return response.text();
-        })
-        .then((data) => {
-          data = data + '<link rel="stylesheet" href="./styles/appDetail.css">';
-          document.querySelector("head").innerHTML = data;
-        });
-
-      fetch("views/header.html")
-        .then((response) => {
-          return response.text();
-        })
-        .then((data) => {
-          document.querySelector("header").innerHTML = data;
-        });
-    </script>
-    <!-- <script src="./scripts/getData.js"></script> -->
-    <script src="./scripts/changeText.js"></script>
   </body>
 </html>

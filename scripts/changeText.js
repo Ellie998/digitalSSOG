@@ -1,16 +1,47 @@
 const h1Element = document.querySelector("h1");
 const appCharacteristicElement = document.getElementById(
-  "app-description-characteristic"
+  "description-characteristic"
 );
-const appIMGElement = document.getElementById("app-description-img");
-const appFunctionCoreElmenet = document.querySelector("#app-use ul");
-const appDownSectionElement = document.getElementById("app-download");
-const appDownNumElement = document.getElementById("app-description-downNum");
-const appStarElement = document.getElementById("app-description-star");
+const ulElementForAppList = document.getElementById("list-ul");
+const appFunctionCoreElement = document.querySelector("#use ul");
 
 const appData = new Array();
 const url = decodeURI(window.location.href);
-const appName = url.substring(url.indexOf("#") + 1, url.length);
+const functionName = url.substring(url.indexOf("#") + 1, url.length);
+
+function getFunctionObjectInArray(array) {
+  for (const object of array) {
+    const functionNameArray = object.core;
+    for (const functionNameItem of functionNameArray) {
+      if (functionNameItem == functionName) {
+        appData.push(object);
+      }
+    }
+  }
+}
+
+function makeAppList(data) {
+  for (const object of appData) {
+    const newList = document.createElement("li");
+    const newAnchor = document.createElement("a");
+    const newAttribute = document.createAttribute("href");
+
+    newAnchor.innerText = object.name;
+    newAttribute.value = `./app.html#${object.name}`;
+
+    ulElementForAppList.appendChild(newList);
+    newList.appendChild(newAnchor);
+    newAnchor.setAttributeNode(newAttribute);
+  }
+}
+
+function changeHTML() {
+  //change html text using object data
+  h1Element.innerText = `${functionName} 기능 소개`;
+  makeAppList();
+  // appCharacteristicElement.innerText = appData[0].특징;
+  // console.dir();
+}
 
 // read local JSON file in javascript
 fetch("../data/appData.json")
@@ -18,20 +49,7 @@ fetch("../data/appData.json")
     return response.json();
   })
   .then(function (data) {
-    // get app object and save to array appName
-    for (const item of data) {
-      if (item.name == appName) {
-        appData.push(item);
-      }
-    }
-    //change html text using object data
-    h1Element.innerText = `${appData[0].name} 어플 소개`;
-    appDownNumElement.innerText = `다운로드 횟수 : ${appData[0].downNum}`;
-    appStarElement.innerText = `별점 : ${appData[0].star}`;
-    appCharacteristicElement.innerText = appData[0].특징;
-    // console.dir();
-    appIMGElement.outerHTML = appData[0].imgLink;
-
-    // appFunctionCoreElmenet.innerText = appData[0].core;
-    // appDownSectionElement.innerText = appData[0].downLink;
+    getFunctionObjectInArray(data);
+    console.log(appData);
+    changeHTML();
   });

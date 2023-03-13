@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
+  <head>
+    <script>
+      fetch("views/head.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          data = data + '<link rel="stylesheet" href="./styles/index.css">';
+          document.querySelector("head").innerHTML = data;
+        });
+      fetch("views/header.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.querySelector("header").innerHTML = data;
+        });
+    </script>
+    <script src="./scripts/getData.js" defer></script>
+  </head>
   <body>
     <header></header>
     <main>
@@ -75,24 +94,5 @@
     <footer>
       <p>Copyright © upps</p>
     </footer>
-
-    <script>
-      fetch("views/head.html")
-        .then((response) => {
-          return response.text();
-        })
-        .then((data) => {
-          data = data + '<link rel="stylesheet" href="./styles/appIndex.css">';
-          document.querySelector("head").innerHTML = data;
-        });
-      fetch("views/header.html")
-        .then((response) => {
-          return response.text();
-        })
-        .then((data) => {
-          document.querySelector("header").innerHTML = data;
-        });
-    </script>
-    <script src="./scripts/getData.js"></script>
   </body>
 </html>
