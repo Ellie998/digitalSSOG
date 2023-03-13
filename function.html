@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <header></header>
+    <main>
+      <section id="app-intro">
+        <h1>Message 어플 소개</h1>
+        <!-- <h2>어플명 : Message</h2> -->
+        <div id="app-people-response-wrap">
+          <p id="app-description-downNum"></p>
+          <p id="app-description-star"></p>
+        </div>
+        <ul id="app-description-ul">
+          <li>
+            <h2>어플 특징</h2>
+            <p id="app-description-characteristic">문자를 보낼 수 있다.</p>
+          </li>
+          <li>
+            <img
+              id="app-description-img"
+              src=""
+              alt=""
+              style="
+                width: 170px;
+                height: 170px;
+                border-radius: 22%;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+              "
+            />
+          </li>
+        </ul>
+      </section>
+      <section id="app-use">
+        <div class="wrap">
+          <h2>사용 기능 정리</h2>
+          <ul>
+            <li>메세지 보내기</li>
+            <li>메세지 삭제하기</li>
+            <li>메세지 전달하기</li>
+          </ul>
+
+          <div id="display-box"></div>
+          <button class="btn">직접 체험하러 GO!</button>
+        </div>
+      </section>
+      <section id="app-download" class="">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.chating.messages.chat.fun&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          ><img
+            alt="다운로드하기 Google Play"
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/ko_badge_web_generic.png"
+            style="width: 250px; height: 83px"
+        /></a>
+        <a
+          href="https://apps.apple.com/us/app/messages/id1146560473?itsct=apps_box_badge&amp;itscg=30200"
+          style="
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 13px;
+            width: 250px;
+            height: 83px;
+          "
+          ><img
+            src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83&amp;releaseDate=1635120000"
+            alt="Download on the App Store"
+            style="border-radius: 13px; width: 250px; height: 83px"
+        /></a>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © upps</p>
+    </footer>
+
+    <script>
+      fetch("views/head.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          data = data + '<link rel="stylesheet" href="./styles/appDetail.css">';
+          document.querySelector("head").innerHTML = data;
+        });
+
+      fetch("views/header.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.querySelector("header").innerHTML = data;
+        });
+    </script>
+    <!-- <script src="./scripts/getData.js"></script> -->
+    <script src="./scripts/changeText.js"></script>
+  </body>
+</html>

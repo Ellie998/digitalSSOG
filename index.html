@@ -4,31 +4,70 @@
   <body>
     <header></header>
     <main>
-      <section class="hero">
-        <h1>Welcome to uups</h1>
-        <p>Upgrade your digital life.</p>
-        <form action="">
-          <label for="search"></label>
-          <input
-            type="text"
-            id="search"
-            name="search"
-            placeholder="검색어를 입력하세요"
-          />
+      <section id="main-header">
+        <h1>디지털쏙</h1>
+        <p>나에게 필요한 기능을 쏙 골라서 어플을 다운받자.</p>
+        <form action="" method="get">
+          <label for="search">원하는 기능을 검색하세요.</label>
+          <input type="text" id="search" name="search" />
           <button class="btn">검색</button>
         </form>
-        <!-- <a href="#" class="btn">Get Started</a> -->
       </section>
-      <section class="services">
-        <h2>Our Services</h2>
+      <section id="main-main">
+        <h2>카테고리별 사용 가능한 기능</h2>
+        <p>궁금한 기능을 클릭하면 연관 어플 리스트를 알려줍니다.</p>
         <ul>
-          <li>
-            <h3>Service 1</h3>
-            <p><a href="./appIndex.html">go to app index page</a></p>
+          <li class="category-wrap">
+            <h3>건강</h3>
+            <ol></ol>
           </li>
-          <li>
-            <h3>Service 2</h3>
-            <p><a href="./appDetail.html">go to app description page</a></p>
+          <li class="category-wrap">
+            <h3>sns</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>도구</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>금융</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>엔터테인먼트</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>교육</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>쇼핑</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>소셜/커뮤니티</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>라이프스타일</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>스포츠</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>여행 및 지역정보</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>지도 및 내비게이션</h3>
+            <ol></ol>
+          </li>
+          <li class="category-wrap">
+            <h3>건강 및 피트니스</h3>
+            <ol></ol>
           </li>
         </ul>
       </section>
@@ -43,9 +82,9 @@
           return response.text();
         })
         .then((data) => {
+          data = data + '<link rel="stylesheet" href="./styles/appIndex.css">';
           document.querySelector("head").innerHTML = data;
         });
-
       fetch("views/header.html")
         .then((response) => {
           return response.text();
@@ -54,5 +93,6 @@
           document.querySelector("header").innerHTML = data;
         });
     </script>
+    <script src="./scripts/getData.js"></script>
   </body>
 </html>

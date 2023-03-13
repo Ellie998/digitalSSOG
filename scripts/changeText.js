@@ -29,7 +29,9 @@ fetch("../data/appData.json")
     appDownNumElement.innerText = `다운로드 횟수 : ${appData[0].downNum}`;
     appStarElement.innerText = `별점 : ${appData[0].star}`;
     appCharacteristicElement.innerText = appData[0].특징;
-    // appIMGElement.innerText = appData[0].imgLink;
+    // console.dir();
+    appIMGElement.outerHTML = appData[0].imgLink;
+
     // appFunctionCoreElmenet.innerText = appData[0].core;
     // appDownSectionElement.innerText = appData[0].downLink;
   });
