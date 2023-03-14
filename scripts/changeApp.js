@@ -52,7 +52,7 @@ function makeFunctionList() {
 }
 
 // read local JSON file in javascript
-fetch("../data/appData.json")
+fetch("../data/app.json")
   .then(function (response) {
     return response.json();
   })

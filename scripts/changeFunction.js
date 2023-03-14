@@ -11,7 +11,7 @@ const functionName = url.substring(url.indexOf("#") + 1, url.length);
 
 function getFunctionObjectInArray(array) {
   for (const object of array) {
-    const functionNameArray = object.core;
+    const functionNameArray = object.functions; // object.functions is array and contain objects
     for (const functionNameItem of functionNameArray) {
       if (functionNameItem == functionName) {
         appData.push(object);
@@ -44,7 +44,7 @@ function changeHTML() {
 }
 
 // read local JSON file in javascript
-fetch("../data/appData.json")
+fetch("../data/app.json")
   .then(function (response) {
     return response.json();
   })
