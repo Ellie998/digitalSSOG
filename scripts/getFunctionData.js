@@ -1,10 +1,6 @@
 const functionCategoryElements = document.querySelector("#function-categorys");
 
 function addFunctionCategoryList(functionCategory) {
-  // <li class="background-grey border-radius-round hover-box-shadow">
-  //  <h3>전화, 문자</h3>
-  //  <ol></ol>
-  // </li>
   const newList = document.createElement("li");
   const newH3 = document.createElement("h3");
   const newOl = document.createElement("ol");
@@ -74,18 +70,12 @@ fetch("../data/function.json")
     for (const functionObjectData of functionData) {
       const functionObjectDataCategory = functionObjectData.category;
 
-      //
       let categoryH3Element = findSameCategoryElement(
         functionObjectDataCategory
       );
-      //
 
       if (categoryH3Element === false) {
-        console.log("no same category");
-
         categoryH3Element = addFunctionCategoryList(functionObjectDataCategory);
-      } else {
-        console.log("same category" + categoryH3Element);
       }
 
       const isSameListResult = isSameFunctionInCategory(
