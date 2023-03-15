@@ -9,6 +9,200 @@
     "star": 4.1,
     "rank": 1,
     "review": "",
+    "functions": [
+      {
+        "name": "전화받기",
+        "category": "전화, 문자"
+      },
+      {
+        "name": "전화걸기",
+        "category": "전화, 문자"
+      },
+      {
+        "name": "문자 발신",
+        "category": "전화, 문자"
+      },
+      {
+        "name": "문자 수신",
+        "category": "전화, 문자"
+      },
+      {
+        "name": "예약 문자 발송",
+        "category": "전화, 문자"
+      },
+      {
+        "name": "문자 전달",
+        "category": "전화, 문자"
+      },
+      {
+        "name": "파일(이미지, 동영상, 음성, 문서) 전송",
+        "category": "전화, 문자"
+      },
+      {
+        "name": "영상통화",
+        "category": "전화, 문자"
+      },
+      {
+        "name": "연락처 공유",
+        "category": "전화, 문자"
+      },
+      {
+        "name": "파일(이미지, 동영상, 음성, 문서) 전송",
+        "category": "sns"
+      },
+      {
+        "name": "오픈채팅",
+        "category": "sns"
+      },
+      {
+        "name": "채팅",
+        "category": "sns"
+      },
+      {
+        "name": "정보 공유",
+        "category": "sns"
+      },
+      {
+        "name": "취미 공유",
+        "category": "sns"
+      },
+      {
+        "name": "일상 공유",
+        "category": "sns"
+      },
+      {
+        "name": "전화번호 저장 없이 인연맺기",
+        "category": "sns"
+      },
+      {
+        "name": "생일 확인",
+        "category": "sns"
+      },
+      {
+        "name": "프로필 확인",
+        "category": "sns"
+      },
+      {
+        "name": "프로필 설정",
+        "category": "sns"
+      },
+      {
+        "name": "타인 사진 구경",
+        "category": "sns"
+      },
+      {
+        "name": "사진 업로드",
+        "category": "sns"
+      },
+      {
+        "name": "라이브쇼핑",
+        "category": "쇼핑"
+      },
+      {
+        "name": "공동구매(공동주문)",
+        "category": "쇼핑"
+      },
+      {
+        "name": "온라인쇼핑 및 구매",
+        "category": "쇼핑"
+      },
+      {
+        "name": "선물하기",
+        "category": "쇼핑"
+      },
+      {
+        "name": "컨텐츠 제공",
+        "category": "엔터테인먼트"
+      },
+      {
+        "name": "오늘의 이슈",
+        "category": "엔터테인먼트"
+      },
+      {
+        "name": "뉴스",
+        "category": "엔터테인먼트"
+      },
+      {
+        "name": "메모 기능",
+        "category": "도구"
+      },
+      {
+        "name": "파일 보관",
+        "category": "도구"
+      },
+      {
+        "name": "소비패턴 분석",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "카드내역 확인",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "카드 추천",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "결제",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "입출금",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "전자문서",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "증권",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "보험",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "대출",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "자산관리",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "qr코드",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "명함 보관",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "모바일 신분증, 운전면허증",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "증명서 발급",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "인증",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "할 일 관리",
+        "category": "생산성"
+      },
+      {
+        "name": "일정 관리",
+        "category": "생산성"
+      },
+      {
+        "name": "날씨",
+        "category": "라이프스타일"
+      }
+    ],
     "detail": {
       "price": "free",
       "membership": "free"
@@ -25,7 +219,52 @@
     "star": "",
     "rank": "",
     "review": "",
-
+    "functions": [
+      {
+        "name": "소비패턴 분석",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "카드내역 확인",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "카드 추천",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "결제",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "입출금",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "전자문서",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "증권",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "보험",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "대출",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "자산관리",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "qr코드",
+        "category": "금융, 인증"
+      }
+    ],
     "detail": {
       "price": "free",
       "membership": "free"
@@ -42,6 +281,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": ["드라마", "영화", "다큐"],
     "detail": {
       "membership": "월 14,500원"
     },
@@ -57,6 +297,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": ["드라마", "영화", "다큐"],
     "detail": {
       "membership": "월 14,500원"
     },
@@ -72,6 +313,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -88,7 +330,52 @@
     "star": "",
     "rank": "",
     "review": "",
-
+    "functions": [
+      {
+        "name": "소비패턴 분석",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "카드내역 확인",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "카드 추천",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "결제",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "입출금",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "전자문서",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "증권",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "보험",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "대출",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "자산관리",
+        "category": "금융, 인증"
+      },
+      {
+        "name": "qr코드",
+        "category": "금융, 인증"
+      }
+    ],
     "detail": {
       "price": "free",
       "membership": "free"
@@ -105,6 +392,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -121,6 +409,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -137,6 +426,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -153,6 +443,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -169,6 +460,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -185,6 +477,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -201,6 +494,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -217,6 +511,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -233,6 +528,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -249,6 +545,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -265,6 +562,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -281,6 +579,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -297,6 +596,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -313,6 +613,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -329,6 +630,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -345,6 +647,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -361,6 +664,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -377,6 +681,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -393,6 +698,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -409,6 +715,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -425,6 +732,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -441,6 +749,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -457,6 +766,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -473,6 +783,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -489,6 +800,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -505,6 +817,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -521,6 +834,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -537,6 +851,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -553,6 +868,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -569,6 +885,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -585,6 +902,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -601,6 +919,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -617,6 +936,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
@@ -633,6 +953,7 @@
     "star": "",
     "rank": "",
     "review": "",
+    "functions": "",
     "detail": {
       "price": "free",
       "membership": "free"
