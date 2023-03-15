@@ -2,19 +2,19 @@
   {
     "name": "전화받기",
     "category": "전화, 문자",
-    "app": ["카카오톡"],
+    "app": ["카카오톡", "instargram"],
     "charateristic": "전화를 받을 수 있다."
   },
   {
     "name": "전화걸기",
     "category": "전화, 문자",
-    "app": ["카카오톡"],
+    "app": ["카카오톡", "instargram"],
     "charateristic": "전화를 걸 수 있다."
   },
   {
     "name": "문자 발신",
     "category": "전화, 문자",
-    "app": ["카카오톡"],
+    "app": ["카카오톡", "instargram"],
     "charateristic": "문자를 보낼 수 있다."
   },
   {
