@@ -3,7 +3,6 @@ const functionCharacteristicElement = document.getElementById(
   "description-characteristic"
 );
 const ulElementForAppList = document.getElementById("list-ul");
-const subfunctionElements = document.querySelector("#main-main ul");
 
 const functionObjectArray = new Array();
 const url = decodeURI(window.location.href);
@@ -38,6 +37,9 @@ function changeHTML() {
   //change html text using object data
   h1Element.innerText = `${functionName} 기능 소개`;
   makeAppList();
+  makeAppListAtMethods();
+  makeMethodListAtMethods();
+  makeMethodListContentAtMethods();
   // appCharacteristicElement.innerText = functionData[0].특징;
   // console.dir();
 }
