@@ -12,6 +12,8 @@ const functionCategoryElements = document.querySelector("#function-categorys");
 
 const choicedAppObject = new Array();
 const choicedFunctionObject = new Array();
+let appCategory;
+
 const url = decodeURI(window.location.href);
 const appUrlName = url.substring(url.indexOf("#") + 1, url.length);
 
@@ -67,8 +69,8 @@ function addFunctionCategoryList(functionCategory) {
   const newOl = document.createElement("ol");
 
   // newList.classList.add("background-grey");
-  newList.classList.add("border-radius-round");
-  newList.classList.add("hover-box-shadow");
+  // newList.classList.add("border-radius-round");
+  // newList.classList.add("hover-box-shadow");
   newSummary.innerText = functionCategory;
   newH3.innerText = functionCategory;
 
@@ -146,6 +148,7 @@ fetch("../data/function.json")
 
     for (const item of choicedFunctionObject) {
       const functionCategory = item.category;
+      appCategory = item.category;
       const functionName = item.name;
 
       let sameCategoryH3Element = findSameCategoryElement(functionCategory);

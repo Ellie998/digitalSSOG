@@ -56,6 +56,10 @@ section ul {
 
 #main-header {
   max-width: 60%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  margin: 8rem auto;
+  
 }
 
 #main-header p {

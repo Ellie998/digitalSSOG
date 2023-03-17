@@ -7,18 +7,22 @@ const ulElementForAppList = document.getElementById("list-ul");
 const functionObjectArray = new Array();
 const url = decodeURI(window.location.href);
 const functionName = url.substring(url.indexOf("#") + 1, url.length);
+let functionCategory;
 
 function getFunctionObjectInArray(functionData) {
   for (const functionObjectData of functionData) {
     const functionObjectName = functionObjectData.name; // object.functions is array and contain objects
     if (functionName == functionObjectName) {
       functionObjectArray.push(functionObjectData);
+      functionCategory = functionObjectData.category;
+      // console.log(functionObjectData);
       return;
     }
   }
 }
 
 function makeAppList() {
+  console.log();
   for (const appName of functionObjectArray[0].app) {
     const newList = document.createElement("li");
     const newAnchor = document.createElement("a");
@@ -51,6 +55,7 @@ fetch("../data/function.json")
   })
   .then(function (functionData) {
     getFunctionObjectInArray(functionData);
-    console.log(functionObjectArray);
+    // console.log(functionData);
     changeHTML();
+    // extraFunctionJs();
   });
