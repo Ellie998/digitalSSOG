@@ -7,9 +7,10 @@
           return response.text();
         })
         .then((data) => {
-          data = data + '<link rel="stylesheet" href="./styles/index.css">';
+          // data = data + '<link rel="stylesheet" href="./styles/app.css">';
           document.querySelector("head").innerHTML = data;
         });
+
       fetch("views/header.html")
         .then((response) => {
           return response.text();
@@ -18,21 +19,21 @@
           document.querySelector("header").innerHTML = data;
         });
     </script>
-    <script src="./scripts/getAppData.js" defer></script>
+    <!-- <script src="./scripts/getData.js"></script> -->
+    <!-- <script src="./scripts/changeApp.js" defer></script> -->
   </head>
   <body>
     <header></header>
     <main class="">
       <section id="main-main" class="layout-center">
-        <h1>카테고리별 사용 가능한 앱</h1>
-        <p class="color-light-grey">
-          궁금한 기능을 클릭하면 연관 어플 리스트를 알려줍니다.
-        </p>
-        <ul id="app-categorys" class="grid-repeat-two"></ul>
+        <div id="main-main-wrap" class="wrap">
+          <h2>사용 기능 정리</h2>
+          <ul id="function-categorys"></ul>
+
+          <div id="display-box"></div>
+          <button class="btn">직접 체험하러 GO!</button>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>Copyright © upps</p>
-    </footer>
   </body>
 </html>

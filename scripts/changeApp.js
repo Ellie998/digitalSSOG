@@ -55,14 +55,27 @@ function changeHTML() {
 
 ///
 function addFunctionCategoryList(functionCategory) {
+  //   <details>
+  //   <summary></summary>
+  //    <h3>제목입니다.</h3>
+  //   <ol></ol>
+  // </details>
   const newList = document.createElement("li");
+  const newDetails = document.createElement("details");
+  const newSummary = document.createElement("summary");
   const newH3 = document.createElement("h3");
   const newOl = document.createElement("ol");
 
+  // newList.classList.add("background-grey");
+  newList.classList.add("border-radius-round");
+  newList.classList.add("hover-box-shadow");
+  newSummary.innerText = functionCategory;
   newH3.innerText = functionCategory;
 
-  newList.appendChild(newH3);
-  newList.appendChild(newOl);
+  newDetails.appendChild(newSummary);
+  newDetails.appendChild(newH3);
+  newDetails.appendChild(newOl);
+  newList.appendChild(newDetails);
   functionCategoryElements.appendChild(newList);
   return newH3;
 }
@@ -85,7 +98,8 @@ function findSameCategoryElement(categoryName) {
   // 카테고리명을 받는다.
   // 받아온 카테고리명과 동일한 카테고리 이름을 가진 h3 element를 찾아 return한다.
   for (const categoryElement of functionElements) {
-    if (categoryElement.innerText == categoryName) {
+    console.dir(categoryElement);
+    if (categoryElement.textContent == categoryName) {
       return categoryElement;
     }
   }

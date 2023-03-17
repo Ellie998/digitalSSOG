@@ -99,14 +99,11 @@ section h2 {
 
 #description-ul {
   margin: 2rem 5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  
 }
 
 #main-main-wrap {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  
   margin: 2rem 5rem;
 
 }
