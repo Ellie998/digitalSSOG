@@ -1,0 +1,15 @@
+.methodNumOl  li{
+  list-style: decimal;
+}
+
+.methodNumOl > li{
+  list-style: circle;
+}
+
+.methodNumOl {
+  margin-left: 2rem;
+}
+
+.methodNumOl ol{
+  margin-left: 2rem;
+}

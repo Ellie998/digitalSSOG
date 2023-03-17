@@ -7,7 +7,8 @@
           return response.text();
         })
         .then((data) => {
-          // data = data + '<link rel="stylesheet" href="./styles/app.css">';
+          data = data + '<link rel="stylesheet" href="./styles/function.css">';
+          data = data + '<link rel="stylesheet" href="./styles/display.css">';
           document.querySelector("head").innerHTML = data;
         });
 
@@ -21,16 +22,24 @@
     </script>
     <!-- <script src="./scripts/getData.js"></script> -->
     <!-- <script src="./scripts/changeApp.js" defer></script> -->
+    <script src="./scripts/display.js" defer></script>
   </head>
   <body>
     <header></header>
-    <main class="">
-      <section id="main-main" class="layout-center">
-        <div id="main-main-wrap" class="wrap">
-          <h2>사용 기능 정리</h2>
-          <ul id="function-categorys"></ul>
+    <main>
+      <section id="main-main" class="layout-center background-grey">
+        <div id="main-main-wrap" class="wrap grid-repeat-two">
+          <h2>How to</h2>
+          <ol class="text-align-left">
+            <li><a href=""> 메세지 보내기</a></li>
+            <li><a href=""> 메세지 저장하기</a></li>
+            <li><a href=""> 메세지 전달하기</a></li>
+          </ol>
 
-          <div id="display-box"></div>
+          <div
+            id="display-box"
+            class="background-white border-radius-round hover-box-shadow"
+          ></div>
           <button class="btn">직접 체험하러 GO!</button>
         </div>
       </section>

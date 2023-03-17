@@ -2,8 +2,31 @@
   {
     "name": "전화받기",
     "category": "전화, 문자",
-    "app": ["카카오톡", "instargram"],
-    "charateristic": "전화를 받을 수 있다."
+    "app": ["기본 어플", "카카오톡", "instargram"],
+    "charateristic": "전화를 받을 수 있다.",
+    "method": [
+      {
+        "methodAppName": "기본 어플",
+        "howto": [
+          {
+            "methodNum": 1,
+            "methodContent": [
+              "전화 어플을 누른다.",
+              "전화번호를 누른다",
+              "통화 버튼을 누른다"
+            ]
+          },
+          {
+            "methodNum": 2,
+            "methodContent": [
+              "연락처 어플을 누른다.",
+              "통화를 원하는 사람을 누른다",
+              "통화 버튼을 누른다"
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "전화걸기",

@@ -8,6 +8,8 @@
         })
         .then((data) => {
           data = data + '<link rel="stylesheet" href="./styles/function.css">';
+          data =
+            data + '<link rel="stylesheet" href="./styles/functionMethod.css">';
           document.querySelector("head").innerHTML = data;
         });
 
@@ -41,11 +43,46 @@
       </section>
       <section id="main-main" class="layout-center background-grey">
         <div id="main-main-wrap" class="wrap grid-repeat-two">
-          <h2>세부 기능 정리</h2>
+          <h2>기능을 사용하는 방법 정리</h2>
           <ul class="text-align-left">
-            <li><a href=""> 메세지 보내기</a></li>
-            <li><a href=""> 메세지 저장하기</a></li>
-            <li><a href=""> 메세지 전달하기</a></li>
+            <li>
+              <details>
+                <summary>어플 1. 기본 어플</summary>
+                <ol class="methodNumOl">
+                  <li>
+                    <p>방법 1</p>
+                    <ol>
+                      <li>전화 어플을 클릭한다.</li>
+                      <li>전화번호를 누른다.</li>
+                      <li>전화 버튼을 클릭한다.</li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>방법 2</p>
+                    <ol>
+                      <li>전화 어플을 클릭한다.2</li>
+                      <li>전화번호를 누른다.2</li>
+                      <li>전화 버튼을 클릭한다.2</li>
+                    </ol>
+                  </li>
+                </ol>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>어플 2. 카카오톡</summary>
+                <ol class="methodNumOl">
+                  <li>
+                    <p>방법 1</p>
+                    <ol>
+                      <li>카카오톡 연락처 카테고리에 들어간다.</li>
+                      <li>전화를 걸려는 사람의 프로필을 클릭한다.</li>
+                      <li>보이스톡 버튼을 클릭한다.</li>
+                    </ol>
+                  </li>
+                </ol>
+              </details>
+            </li>
           </ul>
 
           <div
