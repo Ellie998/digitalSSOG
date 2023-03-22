@@ -109,6 +109,10 @@ li a:hover {
   /* background-color: #d7e2f5; */
   background-image: linear-gradient(135deg, #f5f7fa 10%,  #e8efff 100%);
 }
+.background-blue {
+  background-color: #d7e2f5;
+  color: white;
+}
 .background-grey {
   background-color: rgba(242, 242, 242, 0.807);
 }

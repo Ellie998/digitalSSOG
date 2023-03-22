@@ -7,8 +7,8 @@
           return response.text();
         })
         .then((data) => {
-          data = data + '<link rel="stylesheet" href="./styles/function.css">';
           data = data + '<link rel="stylesheet" href="./styles/display.css">';
+          data = data + '<link rel="stylesheet" href="./styles/function.css">';
           document.querySelector("head").innerHTML = data;
         });
 
@@ -38,12 +38,53 @@
 
           <div
             id="display-box1"
-            class="background-white border-radius-round hover-box-shadow displayBox"
-          ></div>
+            class="background-white border-radius-round hover-box-shadow displayBox none"
+          >
+            <div id="call-app" class="app hover-box-shadow">전화</div>
+          </div>
           <div
             id="display-box2"
-            class="background-white border-radius-round hover-box-shadow displayBox none"
-          ></div>
+            class="background-white border-radius-round hover-box-shadow displayBox"
+          >
+            <div id="number-box"></div>
+            <ol id="numbers">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+
+              <li>*</li>
+              <li>0</li>
+              <li>#</li>
+            </ol>
+            <div id="display-bottom">
+              <button
+                id="camera-call-btn"
+                class="background-white hover-box-shadow bottom-btn"
+              >
+                영통
+              </button>
+              <button
+                id="call-btn"
+                class="background-blue hover-box-shadow bottom-btn"
+              >
+                전화
+              </button>
+              <button
+                id="cancel-btn"
+                class="background-white hover-box-shadow bottom-btn"
+              >
+                취소
+              </button>
+            </div>
+          </div>
           <div
             id="display-box3"
             class="background-white border-radius-round hover-box-shadow displayBox none"
