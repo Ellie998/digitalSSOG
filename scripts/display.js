@@ -5,6 +5,7 @@ const displayBox1Element = document.getElementById("display-box1");
 const displayBox2Element = document.getElementById("display-box2");
 const displayBox3Element = document.getElementById("display-box3");
 const numberBoxElement = document.getElementById("number-box");
+const cancelBtnElement = document.getElementById("cancel-btn");
 
 for (const liElement of methodListElements) {
   liElement.addEventListener("click", (data) => {
@@ -62,3 +63,10 @@ for (const numberElement of numberElements) {
     console.log(numberBoxElement.innerText);
   });
 }
+
+cancelBtnElement.addEventListener("click", () => {
+  numberBoxElement.innerText = numberBoxElement.innerText.slice(
+    0,
+    numberBoxElement.innerText.length - 1
+  );
+});
