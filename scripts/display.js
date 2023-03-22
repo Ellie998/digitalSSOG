@@ -8,7 +8,7 @@ for (const liElement of methodListElement) {
     const appData = data.target.dataset.method;
     switch (appData) {
       case "전화어플 누른다":
-        displayBox1Element.classList.add("none");
+        displayBox2Element.classList.add("none");
         displayBox3Element.classList.add("none");
         displayBox1Element.classList.remove("none");
         break;
