@@ -1,4 +1,4 @@
-const functionMethodElements = document.querySelector("#main-main-wrap ul");
+const functionMethodElements = document.querySelector("#description-app");
 
 function makeAppListAtMethods() {
   for (const appName of functionObjectArray[0].app) {
@@ -48,6 +48,7 @@ function makeMethodListContentAtMethods() {
 
         newList.textContent = methodContent;
 
+        newList.setAttribute("data-method", methodContent);
         methodElementsInApp[method.methodNum - 1].appendChild(newList);
       }
     }
