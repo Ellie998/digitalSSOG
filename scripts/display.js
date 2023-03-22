@@ -1,8 +1,10 @@
-const methodListElements = document.querySelectorAll("#main-main-wrap ol li");
+const methodListElements = document.querySelectorAll("#description-app li");
+const numberElements = document.querySelectorAll("#numbers li");
 const targetMethodElements = document.querySelectorAll(".target");
 const displayBox1Element = document.getElementById("display-box1");
 const displayBox2Element = document.getElementById("display-box2");
 const displayBox3Element = document.getElementById("display-box3");
+const numberBoxElement = document.getElementById("number-box");
 
 for (const liElement of methodListElements) {
   liElement.addEventListener("click", (data) => {
@@ -50,5 +52,13 @@ for (const targetMethodElement of targetMethodElements) {
       default:
         console.log(`Sorry, we are out of ${appData}.`);
     }
+  });
+}
+
+for (const numberElement of numberElements) {
+  numberElement.addEventListener("click", (data) => {
+    console.log(data.target.innerText);
+    numberBoxElement.innerText += data.target.innerText;
+    console.log(numberBoxElement.innerText);
   });
 }

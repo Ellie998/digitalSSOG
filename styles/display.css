@@ -34,12 +34,15 @@ ol li {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  align-self: center;
+  justify-self: center;
 }
 
 #display-box2 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  
 
 }
 
@@ -50,7 +53,6 @@ ol li {
 #number-box {
   grid-column: 1/6;
   height: 150px;
-  
 }
 
 #numbers {
