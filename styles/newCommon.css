@@ -105,6 +105,9 @@ li a:hover {
   text-align: left;
 }
 
+.color-grey {
+  color: var(--light-grey);
+}
 .background-blue-grad {
   /* background-color: #d7e2f5; */
   background-image: linear-gradient(135deg, #f5f7fa 10%,  #e8efff 100%);

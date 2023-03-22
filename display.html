@@ -31,6 +31,7 @@
         <div id="main-main-wrap" class="wrap grid-repeat-two">
           <h2>How to</h2>
           <ol class="text-align-left">
+            <p class="color-grey">화면을 보고싶은 목차를 click!</p>
             <li data-method="전화어플 누른다">전화 어플을 누른다</li>
             <li data-method="전화번호 누른다">전화번호를 누른다</li>
             <li data-method="통화버튼 누른다">통화 버튼을 누른다</li>
@@ -40,7 +41,13 @@
             id="display-box1"
             class="background-white border-radius-round hover-box-shadow displayBox"
           >
-            <div id="call-app" class="app hover-box-shadow">전화</div>
+            <div
+              id="call-app"
+              class="target app hover-box-shadow"
+              data-method="전화번호 누른다"
+            >
+              전화
+            </div>
           </div>
           <div
             id="display-box2"
@@ -73,7 +80,8 @@
               </button>
               <button
                 id="call-btn"
-                class="background-blue hover-box-shadow bottom-btn"
+                data-method="통화버튼 누른다"
+                class="target background-blue hover-box-shadow bottom-btn"
               >
                 전화
               </button>
