@@ -8,6 +8,8 @@
         })
         .then((data) => {
           data = data + '<link rel="stylesheet" href="./styles/app.css">';
+          data =
+            data + '<link rel="stylesheet" href="./styles/functionMethod.css">';
           document.querySelector("head").innerHTML = data;
         });
 

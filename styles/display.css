@@ -1,3 +1,17 @@
 ol li {
   list-style: decimal;
 }
+
+#main-main-wrap li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.displayBox {
+  height: 400px;
+  width: 200px;
+}
+
+.none {
+  display:none;
+}

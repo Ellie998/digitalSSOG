@@ -150,3 +150,7 @@ li a:hover {
   transition: 0.3s ease-in-out;
 
 }
+
+.margin-left {
+  margin-left: 2rem;
+}

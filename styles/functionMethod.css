@@ -1,15 +1,7 @@
-.methodNumOl  li{
+
+.methodNumOl li, .extraFunctionNumOl li{
   list-style: decimal;
 }
-
-.methodNumOl > li{
+.methodNumOl > li, .extraFunctionNumOl > li{
   list-style: circle;
-}
-
-.methodNumOl {
-  margin-left: 2rem;
-}
-
-.methodNumOl ol{
-  margin-left: 2rem;
 }

@@ -8,6 +8,7 @@ function makeAppListAtMethods() {
     const newOl = document.createElement("ol");
 
     newOl.classList.add("methodNumOl");
+    newOl.classList.add("margin-left");
     newSummary.innerText = appName;
 
     newDetails.appendChild(newSummary);
@@ -28,6 +29,7 @@ function makeMethodListAtMethods() {
       const newOl = document.createElement("ol");
 
       newParagraph.textContent = `방법 ${method.methodNum}`;
+      newOl.classList.add("margin-left");
 
       newList.appendChild(newParagraph);
       newList.appendChild(newOl);

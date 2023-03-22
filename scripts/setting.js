@@ -19,6 +19,7 @@ function makeExtraFunctionList() {
     const newOl = document.createElement("ol");
 
     newOl.classList.add("extraFunctionNumOl");
+    newOl.classList.add("margin-left");
     newSummary.innerText = extraFunctionName;
 
     newDetails.appendChild(newSummary);
@@ -41,6 +42,7 @@ function makeExtraMethodListAtMethods() {
       const newOl = document.createElement("ol");
 
       newParagraph.textContent = `방법 ${method.methodNum}`;
+      newOl.classList.add("margin-left");
 
       newList.appendChild(newParagraph);
       newList.appendChild(newOl);
