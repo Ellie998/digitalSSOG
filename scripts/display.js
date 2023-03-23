@@ -65,6 +65,7 @@ for (const numberElement of numberElements) {
 }
 
 cancelBtnElement.addEventListener("click", () => {
+  console.log(numberBoxElement.innerText);
   numberBoxElement.innerText = numberBoxElement.innerText.slice(
     0,
     numberBoxElement.innerText.length - 1

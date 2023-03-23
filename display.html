@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <script>
@@ -20,8 +20,7 @@
           document.querySelector("header").innerHTML = data;
         });
     </script>
-    <!-- <script src="./scripts/getData.js"></script> -->
-    <!-- <script src="./scripts/changeApp.js" defer></script> -->
+
     <script src="./scripts/display.js" defer></script>
   </head>
   <body>
@@ -104,4 +103,71 @@
       </section>
     </main>
   </body>
-</html>
+</html> -->
+
+<div
+  id="display-box1"
+  class="background-white border-radius-round hover-box-shadow displayBox"
+  data-method="전화 어플을 누른다."
+>
+  <div
+    id="call-app"
+    class="target app hover-box-shadow"
+    data-next-method="전화번호를 누른다"
+  >
+    전화
+  </div>
+</div>
+<div
+  id="display-box2"
+  class="background-white border-radius-round hover-box-shadow displayBox none"
+  data-method="전화번호를 누른다"
+>
+  <div id="number-box"></div>
+  <ol id="numbers">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+
+    <li>*</li>
+    <li>0</li>
+    <li>#</li>
+  </ol>
+  <div id="display-bottom">
+    <button
+      id="camera-call-btn"
+      class="background-white hover-box-shadow bottom-btn"
+    >
+      영통
+    </button>
+    <button
+      id="call-btn"
+      data-next-method="통화 버튼을 누른다"
+      class="target background-blue hover-box-shadow bottom-btn"
+    >
+      전화
+    </button>
+    <button
+      id="cancel-btn"
+      class="background-white hover-box-shadow bottom-btn"
+    >
+      취소
+    </button>
+  </div>
+</div>
+<div
+  id="display-box3"
+  class="background-white border-radius-round hover-box-shadow displayBox none target"
+  data-next-method="전화 어플을 누른다."
+  data-method="통화 버튼을 누른다"
+>
+  성공!
+</div>

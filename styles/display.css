@@ -1,11 +1,8 @@
-ol li {
+/* ol li {
   list-style: decimal;
-}
+} */
 
-#main-main-wrap li:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
+
 
 .displayBox {
   padding: 0;

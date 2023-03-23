@@ -47,8 +47,9 @@ function makeMethodListContentAtMethods() {
         const newList = document.createElement("li");
 
         newList.textContent = methodContent;
+        newList.classList.add("list-hover");
+        newList.classList.add("description-list");
 
-        newList.setAttribute("data-method", methodContent);
         methodElementsInApp[method.methodNum - 1].appendChild(newList);
       }
     }
