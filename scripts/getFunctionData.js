@@ -17,6 +17,7 @@ function addFunctionCategoryList(functionCategory) {
   newList.classList.add("hover-box-shadow");
   newSummary.innerText = functionCategory;
   newH3.innerText = functionCategory;
+  newH3.classList.add("none");
 
   newDetails.appendChild(newSummary);
   newDetails.appendChild(newH3);
@@ -37,6 +38,7 @@ function addFunctionList(categoryElement, functionName) {
 
   newAnchor.innerText = functionName;
   newAttribute.value = `../function.html#${functionName}`;
+  newList.classList.add("animate-scale-up");
 
   categoryElement.nextElementSibling.appendChild(newList);
   newList.appendChild(newAnchor);

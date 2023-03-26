@@ -13,6 +13,7 @@ function addAppCategoryList(appCategory) {
   newList.classList.add("hover-box-shadow");
   newSummary.innerText = appCategory;
   newH3.innerText = appCategory;
+  newH3.classList.add("none");
 
   newDetails.appendChild(newSummary);
   newDetails.appendChild(newH3);
@@ -44,6 +45,7 @@ function addAppList(categoryElement, appName) {
 
   newAnchor.innerText = appName;
   newAttribute.value = `../app.html#${appName}`;
+  newList.classList.add("animate-scale-up");
 
   categoryElement.nextElementSibling.appendChild(newList);
   newList.appendChild(newAnchor);
