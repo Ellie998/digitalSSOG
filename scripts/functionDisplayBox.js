@@ -1,10 +1,15 @@
 const mainWrapElement = document.getElementById("main-main-wrap");
+let targetLinkElement;
 
-// console.log(mainWrapElement);
-
-// const newList = document.createElement("div");
-// newList.innerHTML = "";
-// mainWrapElement.appendChild(newList);
+function changeTargetListBackground(descriptionLists) {
+  for (const descriptionList of descriptionLists) {
+    if (descriptionList.innerText === targetLinkElement) {
+      descriptionList.classList.add("target-list");
+    } else {
+      descriptionList.classList.remove("target-list");
+    }
+  }
+}
 
 fetch("display.html")
   .then((response) => {
@@ -19,9 +24,7 @@ fetch("display.html")
     const methodListElements = document.querySelectorAll(".description-list");
     const numberElements = document.querySelectorAll("#numbers li");
     const targetMethodElements = document.querySelectorAll(".target");
-    const displayBox1Element = document.getElementById("display-box1");
-    const displayBox2Element = document.getElementById("display-box2");
-    const displayBox3Element = document.getElementById("display-box3");
+
     const numberBoxElement = document.getElementById("number-box");
     const cancelBtnElement = document.getElementById("cancel-btn");
     const displayBoxdElements = document.querySelectorAll(".displayBox");
@@ -32,6 +35,8 @@ fetch("display.html")
         // 클릭된 Li의 innerText를 가져온다.
         // displayBox들 중에서 innerText와 동일한 data-method를 가진 displayBox를 찾는다.
         // 그 displayBox에 none class를 더한다.
+        targetLinkElement = data.target.innerText;
+        changeTargetListBackground(methodListElements);
 
         displayBoxdElements.forEach((displayBoxElement) => {
           displayBoxElement.classList.add("none");
@@ -46,6 +51,8 @@ fetch("display.html")
     for (const targetMethodElement of targetMethodElements) {
       targetMethodElement.addEventListener("click", (data) => {
         const appData = data.target.dataset.nextMethod;
+        targetLinkElement = appData;
+        changeTargetListBackground(methodListElements);
 
         displayBoxdElements.forEach((displayBoxElement) => {
           displayBoxElement.classList.add("none");
@@ -59,7 +66,6 @@ fetch("display.html")
 
     for (const numberElement of numberElements) {
       numberElement.addEventListener("click", (data) => {
-        console.log(data.target.innerText);
         numberBoxElement.innerText += data.target.innerText;
       });
     }
