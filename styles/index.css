@@ -96,4 +96,25 @@ section ul {
     display: flex;
     flex-direction: column;
   }
+
+  #function-categorys {
+    padding: 3rem 12rem;
+  }
+}
+@media (max-width: 780px) {
+  #function-categorys {
+    padding: 3rem 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #function-categorys {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #function-categorys {
+    padding: 3rem 1rem;
+  }
 }
