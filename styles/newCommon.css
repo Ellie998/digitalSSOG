@@ -194,6 +194,8 @@ footer p {
 .list-hover:hover {
   cursor: pointer;
   /* text-decoration: underline; */
+  color: var(--light-grey);
+
 }
 
 .margin-left {
