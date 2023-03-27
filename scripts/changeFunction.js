@@ -42,10 +42,6 @@ function changeHTML() {
   h1Element.innerText = `${functionName} 기능 소개`;
   makeAppList();
   makeAppListAtMethods();
-  makeMethodListAtMethods();
-  makeMethodListContentAtMethods();
-  // appCharacteristicElement.innerText = functionData[0].특징;
-  // console.dir();
 }
 
 // read local JSON file in javascript
@@ -55,7 +51,5 @@ fetch("../data/function.json")
   })
   .then(function (functionData) {
     getFunctionObjectInArray(functionData);
-    // console.log(functionData);
     changeHTML();
-    // extraFunctionJs();
   });

@@ -1,7 +1,7 @@
 const functionMethodElements = document.querySelector("#description-app");
 
 function makeAppListAtMethods() {
-  for (const appName of functionObjectArray[0].app) {
+  for (const methods of functionObjectArray[0].method) {
     const newList = document.createElement("li");
     const newDetails = document.createElement("details");
     const newSummary = document.createElement("summary");
@@ -9,48 +9,35 @@ function makeAppListAtMethods() {
 
     newOl.classList.add("methodNumOl");
     newOl.classList.add("margin-left");
-    newSummary.innerText = appName;
+    newSummary.innerText = methods.methodAppName;
 
     newDetails.appendChild(newSummary);
     newDetails.appendChild(newOl);
     newList.appendChild(newDetails);
     functionMethodElements.appendChild(newList);
-  }
-}
 
-function makeMethodListAtMethods() {
-  const methodElementsInApp = document.querySelectorAll(".methodNumOl");
-  // console.log(methodElementsInApp);
-
-  for (const methods of functionObjectArray[0].method) {
+    //새로 생긴 카테고리 하위에 그 카테고리에 해당하는 method 설명 더하기
     for (const method of methods.howto) {
-      const newList = document.createElement("li");
-      const newParagraph = document.createElement("p");
-      const newOl = document.createElement("ol");
+      const newMethodList = document.createElement("li");
+      const newMethodParagraph = document.createElement("p");
+      const newMethodOl = document.createElement("ol");
 
-      newParagraph.textContent = `방법 ${method.methodNum}`;
-      newOl.classList.add("margin-left");
+      newMethodParagraph.textContent = `방법 ${method.methodNum}`;
+      newMethodOl.classList.add("margin-left");
 
-      newList.appendChild(newParagraph);
-      newList.appendChild(newOl);
-      methodElementsInApp[method.methodNum - 1].appendChild(newList);
-    }
-  }
-}
-function makeMethodListContentAtMethods() {
-  const methodElementsInApp = document.querySelectorAll(".methodNumOl ol");
-  // console.log(methodElementsInApp);
+      newMethodList.appendChild(newMethodParagraph);
+      newMethodList.appendChild(newMethodOl);
+      newOl.appendChild(newMethodList);
 
-  for (const methods of functionObjectArray[0].method) {
-    for (const method of methods.howto) {
+      // newMethodOl에 method description 내용이 담긴 list 생성
       for (const methodContent of method.methodContent) {
-        const newList = document.createElement("li");
+        const newDescriptionList = document.createElement("li");
 
-        newList.textContent = methodContent;
-        newList.classList.add("list-hover");
-        newList.classList.add("description-list");
+        newDescriptionList.textContent = methodContent;
+        newDescriptionList.classList.add("list-hover");
+        newDescriptionList.classList.add("description-list");
 
-        methodElementsInApp[method.methodNum - 1].appendChild(newList);
+        newMethodOl.appendChild(newDescriptionList);
       }
     }
   }

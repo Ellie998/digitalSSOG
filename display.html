@@ -6,7 +6,7 @@
   <div
     id="call-app"
     class="target app hover-box-shadow"
-    data-next-method="전화번호를 누른다"
+    data-next-method="전화번호를 누른 후, 통화 버튼을 누른다."
   >
     <i class="bi bi-telephone"></i>
   </div>
@@ -14,7 +14,7 @@
 <div
   id="display-box2"
   class="background-white border-radius-round hover-box-shadow displayBox none"
-  data-method="전화번호를 누른다"
+  data-method="전화번호를 누른 후, 통화 버튼을 누른다."
 >
   <div id="number-box"></div>
   <ol id="numbers">
@@ -41,12 +41,11 @@
     >
       <i class="bi bi-camera-video"></i>
     </button>
-    <button
-      id="call-btn"
-      data-next-method="통화 버튼을 누른다"
-      class="target background-blue hover-box-shadow bottom-btn"
-    >
-      <i class="bi bi-telephone"></i>
+    <button id="call-btn" class="background-blue hover-box-shadow bottom-btn">
+      <i
+        data-next-method="전화 어플로 전화 걸기 성공!"
+        class="target bi bi-telephone"
+      ></i>
     </button>
     <button
       id="cancel-btn"
@@ -60,7 +59,7 @@
   id="display-box3"
   class="background-white border-radius-round hover-box-shadow displayBox none target"
   data-next-method="전화 어플을 누른다."
-  data-method="통화 버튼을 누른다"
+  data-method="전화 어플로 전화 걸기 성공!"
 >
   성공!
 </div>
@@ -87,7 +86,7 @@
   <ul>
     <li>
       <i
-        data-next-method="통화를 원하는 사람을 누른다"
+        data-next-method="통화를 원하는 사람을 누른다."
         class="target bi bi-person"
       ></i>
     </li>
@@ -108,7 +107,7 @@
 <div
   id="display-box6"
   class="background-white border-radius-round hover-box-shadow displayBox none"
-  data-method="통화를 원하는 사람을 누른다"
+  data-method="통화를 원하는 사람을 누른다."
 >
   <ul>
     <li>
@@ -117,14 +116,18 @@
       <p>profile message</p>
       <p>choiced music</p>
     </li>
-    <li>
+    <li data-next-method="통화하기 버튼을 누른다." class="target">
       <i
         data-next-method="통화하기 버튼을 누른다."
         class="target bi bi-person"
       ></i>
-      <p>name</p>
-      <p>profile message</p>
-      <p>choiced music</p>
+      <p data-next-method="통화하기 버튼을 누른다." class="target">target</p>
+      <p data-next-method="통화하기 버튼을 누른다." class="target">
+        profile message
+      </p>
+      <p data-next-method="통화하기 버튼을 누른다." class="target">
+        choiced music
+      </p>
     </li>
     <li>
       <i class="bi bi-person"></i>
@@ -162,9 +165,14 @@
         <i class="bi bi-chat"></i>
         <p>1:1채팅</p>
       </li>
-      <li>
-        <i data-next-method="성공!" class="target bi bi-telephone"></i>
-        <p>통화하기</p>
+      <li data-next-method="카카오톡 어플로 전화 걸기 성공!" class="target">
+        <i
+          data-next-method="카카오톡 어플로 전화 걸기 성공!"
+          class="target bi bi-telephone"
+        ></i>
+        <p data-next-method="카카오톡 어플로 전화 걸기 성공!" class="target">
+          통화하기
+        </p>
       </li>
       <li>
         <i class="bi bi-camera-video"></i>
@@ -181,7 +189,7 @@
   id="display-box7"
   class="background-white border-radius-round hover-box-shadow displayBox none target"
   data-next-method="카카오톡 어플을 누른다."
-  data-method="성공!"
+  data-method="카카오톡 어플로 전화 걸기 성공!"
 >
   성공!
 </div>
