@@ -67,7 +67,6 @@ function makeMethodListContentAtExtraMethods() {
   }
 }
 
-function extraFunctionJs() {}
 fetch(
   "https://gist.githubusercontent.com/Ellie998/490162e93ad71f777d70c2a91e1a7623/raw/9d2cb753d30654746d296d7bf0413672f632933e/extraFunction.json"
 )
