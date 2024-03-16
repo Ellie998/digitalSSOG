@@ -5,6 +5,8 @@
 #### URL 
 : https://digitalssog-vanila-js.netlify.app/
 
-#### 최신 버전
+#### next.js 사용 버전
 : https://github.com/Ellie998/digitalSSOG-next
+
+#### 배포
 : https://digitalssog.com
