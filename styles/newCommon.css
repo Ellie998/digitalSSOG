@@ -81,10 +81,8 @@ li a {
 
 }
 li a:hover {
-  /* text-decoration: underline; */
   transform: scale(1.1);
   color: var(--light-grey);
-
 }
 
 summary {
